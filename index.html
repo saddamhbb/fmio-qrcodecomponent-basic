@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .qr-code-container {
+            width: 288px;
+            height: 288px;
+            background-image: url('./qr-code-container.png');
+        }
+
+        .qr-code {
+            width: 160px;
+            height: 160px;
+        }
+
+        .card {
+            padding: 16px;
+            border-radius: 20px;
+            background-color: #FFFFFF;
+            max-width: 320px;
+            max-height: 497px;
+            height: 100%;
+        }
+        
+        .body-bg-clear {
+            background-color: #F2F2F2!important;
+        }
+
+        .position-relative {
+            position: relative!important;
+        }
+
+        .position-absolute {
+            position: absolute!important;
+        }
+
+        .absolute-centered {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mb-16 {
+            margin-bottom: 16px!important;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px!important;
+        }
+
+        .ff-primary {
+            font-family: 'Outfit', sans-serif!important;
+        }
+
+        .fw-regular {
+            font-weight: 400!important;
+        }
+
+        .fw-bold {
+            font-weight: 700!important;
+        }
+
+        .fs-22 {
+            font-size: 22px!important;
+        }
+
+        .fs-15 {
+            font-size: 15px!important;
+        }
+        
+        .flh-28 {
+            line-height: 28px!important;
+        }
+
+        .flh-19 {
+            line-height: 19px!important;
+        }
+
+        .text-center {
+            text-align: center!important;
+        }
+    </style>
+</head>
+<body class="body-bg-clear position-relative">
+    <div class="card position-absolute absolute-centered ff-primary">
+        <div>
+            <div class="qr-code-container mb-20 position-relative">
+                <div class="qr-code position-absolute absolute-centered">
+                    <img src="qr-code.png" alt="qr-code">
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="mb-16 fw-bold fs-22 flh-28">Improve your front-end skills by building projects</div>
+            <div class="fw-regular fs-15 flh-19">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+        </div>
+    </div>
+</body>
+</html>
